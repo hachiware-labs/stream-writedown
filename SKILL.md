@@ -1,9 +1,9 @@
 ---
-name: streame-writedown
+name: stream-writedown
 description: YouTube の動画・再生リスト・チャンネルから、Chrome または Computer Use で文字起こしを収集し、内容単位に構成・校正した監査可能な Markdown として保存する。英語字幕は日本語へ翻訳する。YouTube URL から一括で書き起こしを取得・再構成・再取得したい依頼で使う。既存文章の要約や YouTube 以外には使わない。
 ---
 
-# Streame Writedown
+# Stream Writedown
 
 YouTube の公開 UI から字幕キューを取得し、原文の完全性を検証してから、内容単位に構成・校正した読みやすい Markdown を動画ごとに保存する。英語の文字起こしは、原文処理を完了した後に日本語へ翻訳する。
 
@@ -89,7 +89,7 @@ Chrome のタブ選択、書き出し形式、検証、失敗時の扱いは [re
 監査データは同じチャンネルフォルダー内へ保存する。
 
 ```text
-<出力ルート>/<チャンネル名>/.streame-writedown/<video-id>.audit.json
+<出力ルート>/<チャンネル名>/.stream-writedown/<video-id>.audit.json
 ```
 
 最終 Markdown の `transcript_status: "complete"` には次を必ず含める。
@@ -97,7 +97,7 @@ Chrome のタブ選択、書き出し形式、検証、失敗時の扱いは [re
 ```yaml
 transcript_layout: "content_sections"
 proofread: true
-proofread_audit: ".streame-writedown/<video-id>.audit.json"
+proofread_audit: ".stream-writedown/<video-id>.audit.json"
 translated: false
 translation_target_language: null
 ```

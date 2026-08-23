@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify a streame-writedown audit record against its final Markdown."""
+"""Verify a stream-writedown audit record against its final Markdown."""
 
 from __future__ import annotations
 

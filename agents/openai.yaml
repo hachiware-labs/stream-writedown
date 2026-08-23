@@ -1,4 +1,4 @@
 interface:
-  display_name: "YouTube Writedown"
+  display_name: "Stream Writedown"
   short_description: "YouTube字幕を構成・校正・翻訳してMarkdown保存"
-  default_prompt: "Use $streame-writedown to acquire this YouTube transcript with Chrome or Computer Use, then save verified, proofread, content-structured Markdown and translate English into Japanese."
+  default_prompt: "Use $stream-writedown to acquire this YouTube transcript with Chrome or Computer Use, then save verified, proofread, content-structured Markdown and translate English into Japanese."

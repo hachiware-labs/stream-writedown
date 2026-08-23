@@ -18,7 +18,7 @@ class VerifyTranscriptTests(unittest.TestCase):
     def write_case(self, audit: dict, body: str, *, translated: bool, target: str | None):
         temp = tempfile.TemporaryDirectory()
         root = Path(temp.name)
-        audit_dir = root / ".streame-writedown"
+        audit_dir = root / ".stream-writedown"
         audit_dir.mkdir()
         audit_path = audit_dir / "abcdefghijk.audit.json"
         markdown_path = root / "2026-08-23-title.md"
@@ -32,7 +32,7 @@ class VerifyTranscriptTests(unittest.TestCase):
                     'transcript_status: "complete"',
                     'transcript_layout: "content_sections"',
                     "proofread: true",
-                    'proofread_audit: ".streame-writedown/abcdefghijk.audit.json"',
+                    'proofread_audit: ".stream-writedown/abcdefghijk.audit.json"',
                     f"translated: {'true' if translated else 'false'}",
                     f"translation_target_language: {target_value}",
                     "---",

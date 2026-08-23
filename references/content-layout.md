@@ -112,7 +112,7 @@ transcript_kind: "auto"
 transcript_status: "complete"
 transcript_layout: "content_sections"
 proofread: true
-proofread_audit: ".streame-writedown/abcdefghijk.audit.json"
+proofread_audit: ".stream-writedown/abcdefghijk.audit.json"
 translated: false
 translation_target_language: null
 retrieved_at: "2026-08-23T12:34:56+09:00"
@@ -149,7 +149,7 @@ retrieved_at: "2026-08-23T12:34:56+09:00"
 
 ## 監査 JSON
 
-`.streame-writedown/<video-id>.audit.json` は UTF-8 の次の構造にする。
+`.stream-writedown/<video-id>.audit.json` は UTF-8 の次の構造にする。
 
 ```json
 {
@@ -209,4 +209,3 @@ python -X utf8 -m unittest discover -s tests -v
 ## 実測ベンチマーク
 
 動画 `RPD90NChDiM` では、自動字幕 307 キュー、連結本文 5,689 文字を 6 節・24 段落へ再構成し、校正前本文について欠落 0、重複 0、先頭・末尾一致、文中で終わる段落 0 を確認できた。この数値は再現性の参考であり、別動画へ 6 節・24 段落を強制しない。
-
